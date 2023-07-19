@@ -67,7 +67,6 @@ console.log(newYearsResolutions1.length);   //2
 const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 console.log(objectives.length);     //3
 
-
 //the .push() Method (adds items to the end of an array)
 
 const itemTracker = ['item 0', 'item 1', 'item 2'];
@@ -76,64 +75,4 @@ console.log(itemTracker);   //['item 0', 'item 1', 'item 2', 'item 3', 'item 4']
 
 const chores = ['wash dishes', 'do laundry', 'take out trash'];
 chores.push('tidy living room', 'make beds');
-console.log(chores);        //[ 'wash dishes', 'do laundry', 'take out trash', 'tidy living room', 'make beds' ]
-
-
-//the .pop() Method (removes the last item of an array)
-
-const newItemTracker = ['item 0', 'item 1', 'item 2'];
-const removed = newItemTracker.pop();
-console.log(newItemTracker);    //[ 'item 0', 'item 1' ]
-console.log(removed);           //item 2
-
-const chores1 = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
-chores.pop();
-console.log(chores1);       //[ 'wash dishes', 'do laundry', 'take out trash', 'cook dinner' ]
-
-
-//more array methods
-
-const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
-groceryList.shift();                                //removes the first item from the array
-groceryList.unshift('popcorn');                     //adds an item to the beginning of the array
-console.log(groceryList);                           //[ 'popcorn', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains' ]
-console.log(groceryList.slice(1, 4))                //[ 'bananas', 'coffee beans', 'brown rice' ] -> array.slice(start, end); start: The start index of the slice to be returned (optional) end: The end index of the slice to be returned (optional) (the first item to not be sliced)
-console.log(groceryList);                           //.slice() is non-mutating, it doesn't physically remove the items: [ 'popcorn', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains' ]
-const pastaIndex = groceryList.indexOf('pasta');    //finds the index of a particular item
-console.log(pastaIndex);                            //4
-
-//arrays and functions
-
-const flowers = ['peony', 'daffodil', 'marigold'];
-function addFlower(arr) {
-    arr.push('lily');
-}
-addFlower(flowers);
-console.log(flowers); //['peony', 'daffodil', 'marigold', 'lily']
-
-
-const concept = ['arrays', 'can', 'be', 'mutated'];
-function changeArr(arr) {
-    arr[3] = 'MUTATED';
-}
-changeArr(concept);
-console.log(concept);               //[ 'arrays', 'can', 'be', 'MUTATED' ]
-
-function removeElement(newArr) {
-    newArr.pop();
-}
-removeElement(concept);
-console.log(concept);               //[ 'arrays', 'can', 'be' ]
-//Notice that in both cases, the change to the array was maintained outside of the function!
-
-
-//Nested Arrays
-
-const nestedArr = [[1], [2, 3]];
-console.log(nestedArr[1]); //[2, 3]
-console.log(nestedArr[1][0]); //2
-
-const numberClusters = [[1, 2], [3, 4], [5, 6]];
-const target = numberClusters[2][1];
-console.log(target);    //6
-
+console.log(chores);        //

@@ -126,14 +126,3 @@ removeElement(concept);
 console.log(concept);               //[ 'arrays', 'can', 'be' ]
 //Notice that in both cases, the change to the array was maintained outside of the function!
 
-
-//Nested Arrays
-
-const nestedArr = [[1], [2, 3]];
-console.log(nestedArr[1]); //[2, 3]
-console.log(nestedArr[1][0]); //2
-
-const numberClusters = [[1, 2], [3, 4], [5, 6]];
-const target = numberClusters[2][1];
-console.log(target);    //6
-

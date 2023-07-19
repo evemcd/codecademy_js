@@ -97,43 +97,7 @@ const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'p
 groceryList.shift();                                //removes the first item from the array
 groceryList.unshift('popcorn');                     //adds an item to the beginning of the array
 console.log(groceryList);                           //[ 'popcorn', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains' ]
-console.log(groceryList.slice(1, 4))                //[ 'bananas', 'coffee beans', 'brown rice' ] -> array.slice(start, end); start: The start index of the slice to be returned (optional) end: The end index of the slice to be returned (optional) (the first item to not be sliced)
-console.log(groceryList);                           //.slice() is non-mutating, it doesn't physically remove the items: [ 'popcorn', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains' ]
-const pastaIndex = groceryList.indexOf('pasta');    //finds the index of a particular item
-console.log(pastaIndex);                            //4
-
-//arrays and functions
-
-const flowers = ['peony', 'daffodil', 'marigold'];
-function addFlower(arr) {
-    arr.push('lily');
-}
-addFlower(flowers);
-console.log(flowers); //['peony', 'daffodil', 'marigold', 'lily']
-
-
-const concept = ['arrays', 'can', 'be', 'mutated'];
-function changeArr(arr) {
-    arr[3] = 'MUTATED';
-}
-changeArr(concept);
-console.log(concept);               //[ 'arrays', 'can', 'be', 'MUTATED' ]
-
-function removeElement(newArr) {
-    newArr.pop();
-}
-removeElement(concept);
-console.log(concept);               //[ 'arrays', 'can', 'be' ]
-//Notice that in both cases, the change to the array was maintained outside of the function!
-
-
-//Nested Arrays
-
-const nestedArr = [[1], [2, 3]];
-console.log(nestedArr[1]); //[2, 3]
-console.log(nestedArr[1][0]); //2
-
-const numberClusters = [[1, 2], [3, 4], [5, 6]];
-const target = numberClusters[2][1];
-console.log(target);    //6
-
+console.log(groceryList.slice(1, 4))                //[ 'bananas', 'coffee beans', 'brown rice' ] -> array.slice(start, end); 
+console.log(groceryList);
+const pastaIndex = groceryList.indexOf('pasta');
+console.log(pastaIndex);

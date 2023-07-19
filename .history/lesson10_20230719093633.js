@@ -110,30 +110,3 @@ function addFlower(arr) {
 }
 addFlower(flowers);
 console.log(flowers); //['peony', 'daffodil', 'marigold', 'lily']
-
-
-const concept = ['arrays', 'can', 'be', 'mutated'];
-function changeArr(arr) {
-    arr[3] = 'MUTATED';
-}
-changeArr(concept);
-console.log(concept);               //[ 'arrays', 'can', 'be', 'MUTATED' ]
-
-function removeElement(newArr) {
-    newArr.pop();
-}
-removeElement(concept);
-console.log(concept);               //[ 'arrays', 'can', 'be' ]
-//Notice that in both cases, the change to the array was maintained outside of the function!
-
-
-//Nested Arrays
-
-const nestedArr = [[1], [2, 3]];
-console.log(nestedArr[1]); //[2, 3]
-console.log(nestedArr[1][0]); //2
-
-const numberClusters = [[1, 2], [3, 4], [5, 6]];
-const target = numberClusters[2][1];
-console.log(target);    //6
-
