@@ -119,5 +119,3 @@ do {
     cupsAdded++;
     console.log(cupsAdded + ' sugar added');
 } while (cupsAdded < cupsOfSugarNeeded);
-
-

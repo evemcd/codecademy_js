@@ -100,24 +100,3 @@ while (currentCard != 'spade') {
 
 
 //Do...While Statements (lets code run once and then loops based on the condition set)
-
-let countString = '';
-let i = 10;
-do {
-    countString = countString + i;
-    i++;
-} while (i < 5);
-
-console.log(countString);       //does the loop once regardless of conditions, then checks and continues only if condition true
-
-
-//exercise: We’d like a program to simulate part of the cake-baking process. Depending on the recipe, a different number of cups of sugar is required. The cups of sugar must be added to the batter one at a time. We have a sweet tooth, so we want to add at least one cup of sugar to the batter.
-
-let cupsOfSugarNeeded = 6;
-let cupsAdded = 0;
-do {
-    cupsAdded++;
-    console.log(cupsAdded + ' sugar added');
-} while (cupsAdded < cupsOfSugarNeeded);
-
-
