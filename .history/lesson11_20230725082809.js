@@ -123,28 +123,3 @@ do {
 
 //The Break Keyword (when we want to stop a loop from continuing to execute even though the original stopping condition we wrote for our loop hasn’t been met, we can use the keyword break)
 
-for (let i = 0; i < 99; i++) {
-    if (i > 2) {
-        break;
-    }
-    console.log('Banana.');
-}
-console.log('Orange you glad I broke out the loop!');
-/* Output:
-Banana.
-Banana.
-Banana.
-Orange you glad I broke out the loop!*/
-
-//exercise: log each element in a for loop, break after Notorious B.I.G.
-const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
-
-for (let i = 0; i < rapperArray.length; i++) {
-    console.log(rapperArray[i]);
-    if (rapperArray[i] === 'Notorious B.I.G.') {
-        break;
-        console.log('Notorious B.I.G.')
-    }
-}
-console.log("And if you don't know, now you know.");
-
